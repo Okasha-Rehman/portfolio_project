@@ -17,9 +17,9 @@ jobs:
       uses: docker/setup-buildx-action@v1
 
     - name: Build Docker images
-      run: docker-compose build
+      run: docker compose build
 
     - name: Test Flask API
       run: |
-        docker-compose up -d
+        docker compose up -d
         curl -X POST http://localhost:5000/submit_contact -d "name=Test&email=test@example.com"
