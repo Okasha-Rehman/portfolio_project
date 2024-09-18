@@ -22,4 +22,5 @@ jobs:
     - name: Test Flask API
       run: |
         docker compose up -d
+        sleep 60
         curl -X POST http://localhost:5000/submit_contact -d "name=Test&email=test@example.com"
