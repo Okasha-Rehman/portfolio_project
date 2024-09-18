@@ -5,32 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okasha Rehman - DevOps Engineer</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Okasha Rehman</h1>
-        <p>DevOps Engineer with expertise in cloud computing, CI/CD, and automation.</p>
-        
-        <h2>Skills</h2>
-        <ul>
-            <li>Docker, Kubernetes, CI/CD</li>
-            <li>Python & Bash Scripting</li>
-            <li>Cloud Platforms (AWS, GCP)</li>
-            <li>Monitoring Tools (Prometheus, Grafana)</li>
-        </ul>
-        
-        <h2>Projects</h2>
-        <p>Coming Soon...</p>
-        
-        <h2>Contact Me</h2>
-        <form action="/submit_contact" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Okasha Rehman</h1>
+            <h2>DevOps Engineer</h2>
+            <p>Passionate DevOps engineer with expertise in cloud computing, CI/CD, and automation. Committed to optimizing development workflows and enhancing system reliability.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-docker"></i>
+                    <span>Docker & Kubernetes</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code-branch"></i>
+                    <span>CI/CD</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <span>Python & Bash Scripting</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cloud"></i>
+                    <span>Cloud Platforms (AWS, GCP)</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Monitoring (Prometheus, Grafana)</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3>Automated CI/CD Pipeline</h3>
+                    <p>Implemented a robust CI/CD pipeline using Jenkins, Docker, and Kubernetes, reducing deployment time by 70%.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Cloud Migration</h3>
+                    <p>Led a successful migration of on-premise infrastructure to AWS, improving scalability and reducing operational costs by 40%.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Monitoring Solution</h3>
+                    <p>Designed and implemented a comprehensive monitoring solution using Prometheus and Grafana, enhancing system observability.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="/submit_contact" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" name="message" required>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Okasha Rehman. All rights reserved.</p>
+    </footer>
 </body>
 </html>
 
